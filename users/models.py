@@ -26,7 +26,7 @@ class Ingredient(models.Model):
 
 
 class Dish(models.Model):
-    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     description = models.TextField()
     cooking_method = models.TextField()
     photo = models.ImageField(upload_to='dishes/', blank=True, null=True)
