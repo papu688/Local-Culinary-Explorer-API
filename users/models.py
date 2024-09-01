@@ -45,13 +45,6 @@ class Rating(models.Model):
         return f'{self.rating} - {self.dish.name}'
     
 
-class Recommendation(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
-    score = models.FloatField()
-
-    def __str__(self):
-        return f'Recommendation {self.dish.name} for {self.user.username}'
 
 
     

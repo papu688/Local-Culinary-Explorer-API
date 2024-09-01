@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, Chef, Ingredient, Dish, Rating, Recommendation
+from .models import User, Chef, Ingredient, Dish, Rating
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -26,7 +26,8 @@ class RatingSerializer(serializers.ModelSerializer):
         model = Rating
         fields = ['id', 'user', 'dish', 'rating']
 
-class RecommendationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Recommendation
-        fields = ['id', 'user', 'dish', 'score']
+    def validate_rating(self, value):
+        if not (1 <= value <= 5):
+            raise serializers.ValidationError('Rating must be bewteen 1 and 5.')
+        return value
+        
