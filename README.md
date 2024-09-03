@@ -64,6 +64,7 @@ To get a list of all dishes:
 
    ```bash
    curl -H "Authorization: Token <your_token>" http://127.0.0.1:8000/dishes
+   ```
 
 ## API Endpoints
 
