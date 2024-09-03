@@ -16,10 +16,12 @@ class ChefViewSet(viewsets.ModelViewSet):
 class IngredientViewSet(viewsets.ModelViewSet):
     queryset = Ingredient.objects.all()
     serializer_class = IngredientSerializer
+    permission_classes = [IsAuthenticatedAndReadOnly]
 
 class DishViewSet(viewsets.ModelViewSet):
     queryset = Dish.objects.all()
     serializer_class = DishSerializer
+    permission_classes = [IsAuthenticatedAndReadOnly]
     filter_backends = [DjangoFilterBackend]
     filterset_class = DishFilter
 

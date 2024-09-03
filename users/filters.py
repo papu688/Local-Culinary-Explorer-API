@@ -9,3 +9,5 @@ class DishFilter(django_filters.FilterSet):
     class Meta:
         model = Dish
         fields = ['name', 'chef', 'ingredients']
+
+        
