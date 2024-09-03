@@ -110,6 +110,18 @@ To filter dishes by name and chef ID:
 ```bash
 curl "http://127.0.0.1:8000/dishes/?name=spaghetti&chef=1"
 
+## Authentication
+
+This API uses a token-based authentication system. To authenticate, send a POST request to `/api-token-auth/` with your username and password to receive a token.
+
+### Example Request
+
+To obtain a token:
+
+```bash
+curl -X POST -d "username=<your_username>&password=<your_password>" http://127.0.0.1:8000/api-token-auth/
+
+
 
 
 
