@@ -95,6 +95,22 @@ To get a list of all dishes:
 - **GET /ratings/**: List all ratings.
 - **GET /ratings/{id}/**: Retrieve a specific rating.
 
+## Filters
+
+The following filters are available for dishes:
+
+- **name**: Filter by dish name (case-insensitive).
+- **chef**: Filter by chef ID.
+- **ingredients**: Filter by ingredient ID.
+
+### Example
+
+To filter dishes by name and chef ID:
+
+```bash
+curl "http://127.0.0.1:8000/dishes/?name=spaghetti&chef=1"
+
+
 
 
 
