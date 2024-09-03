@@ -46,11 +46,25 @@ The Local Culinary Explorer API is designed to help users explore local cuisine.
 The server will be running at http://127.0.0.1:8000/.
 
 ## Usage
-Authentication
+
+### Authentication
+
 Authenticate users via token-based authentication.
 
-   1. Obtain a token by logging in with your credentials.
-   2. Include the token in the Authorization header for all subsequent requests:
+1. Obtain a token by logging in with your credentials.
+2. Include the token in the `Authorization` header for all subsequent requests:
+
+    ```
+    Authorization: Token <your_token>
+    ```
+
+### Example Request
+
+To get a list of all dishes:
+
+```bash
+curl -H "Authorization: Token <your_token>" http://127.0.0.1:8000/dishes
+
 
 
 
