@@ -131,15 +131,15 @@ Contributions are welcome! Please follow these steps:
 
 2. **Create a new branch for your feature (`git checkout -b feature-name`).**
 
-3. **Commit your changes (git commit -m 'Add some feature').**
+3. **Commit your changes (`git commit -m 'Add some feature'`).**
 
-4. **Push to the branch (git push origin feature-name).**
+4. **Push to the branch (`git push origin feature-name`).**
 
 5. **Open a Pull Request**
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 
 
