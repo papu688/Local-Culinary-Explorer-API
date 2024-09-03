@@ -121,6 +121,21 @@ To obtain a token:
 
 ```bash
 curl -X POST -d "username=<your_username>&password=<your_password>" http://127.0.0.1:8000/api-token-auth/
+```
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the repository.**
+
+2. **Create a new branch for your feature (git checkout -b feature-name).**
+
+3. **Commit your changes (git commit -m 'Add some feature').**
+
+4. **Push to the branch (git push origin feature-name).**
+
+5. **Open a Pull Request**
 
 
 
