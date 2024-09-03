@@ -62,8 +62,39 @@ Authenticate users via token-based authentication.
 
 To get a list of all dishes:
 
-```bash
-curl -H "Authorization: Token <your_token>" http://127.0.0.1:8000/dishes
+   ```bash
+   curl -H "Authorization: Token <your_token>" http://127.0.0.1:8000/dishes
+
+## API Endpoints
+
+### Users
+- **POST /users/**: Register a new user.
+- **GET /users/**: List all users.
+- **GET /users/{id}/**: Retrieve a specific user.
+
+### Chefs
+- **POST /chefs/**: Add a new chef.
+- **GET /chefs/**: List all chefs.
+- **GET /chefs/{id}/**: Retrieve a specific chef.
+
+### Dishes
+- **POST /dishes/**: Add a new dish.
+- **GET /dishes/**: List all dishes.
+- **GET /dishes/{id}/**: Retrieve a specific dish.
+- **PUT /dishes/{id}/**: Update a dish.
+- **DELETE /dishes/{id}/**: Delete a dish.
+
+### Ingredients
+- **POST /ingredients/**: Add a new ingredient.
+- **GET /ingredients/**: List all ingredients.
+- **GET /ingredients/{id}/**: Retrieve a specific ingredient.
+
+### Ratings
+- **POST /ratings/**: Add a new rating.
+- **GET /ratings/**: List all ratings.
+- **GET /ratings/{id}/**: Retrieve a specific rating.
+
+
 
 
 
