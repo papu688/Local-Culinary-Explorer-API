@@ -109,6 +109,7 @@ To filter dishes by name and chef ID:
 
 ```bash
 curl "http://127.0.0.1:8000/dishes/?name=spaghetti&chef=1"
+```
 
 ## Authentication
 
