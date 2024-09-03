@@ -14,3 +14,10 @@ The Local Culinary Explorer API is designed to help users explore local cuisine.
 - **Chef Profiles**: Manage detailed chef profiles.
 - **Filtering**: Filter dishes based on relevant fields like name, chef, and ingredients.
 
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/papu688/Local-Culinary-Explorer-API.git
+   cd local-culinary-explorer-API
